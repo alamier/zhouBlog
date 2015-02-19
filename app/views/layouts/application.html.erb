@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%=	 zfull_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%=	 favicon_link_tag "lz.png" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<div class="footer-container">
+  <a class="footer-item" href="#">Login</a>
+  <a class="footer-item" href=<%=	 new_post_path %>>Logout</a>
+  <a class="footer-item" href=<%=	 new_post_path %>>New</a>
+</div>
+
+</body>
+</html>

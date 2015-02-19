@@ -1,0 +1,44 @@
+<%	 provide(:title,"Create a new blog") %>
+
+<a class="a-home-button" href="/">
+  <%=	 image_tag("lz.png",class: 'img-home-btn') %>
+</a>
+
+<div class="title-container">
+  <%=	 image_tag("title-image.png", class: "title-image") %>
+</div>
+<div class="avatar-container">
+  <a href=<%=	 about_path %>>
+    <img class="avatar" src="https://github.com/tclem.png" alt=""/>
+  </a>
+</div>
+
+<h1>New Post</h1>
+
+<%=	 form_for :post, url: posts_path do |f| %>
+
+    <% if @post.errors.any? %>
+        <h2 class=""><%=	 pluralize @post.errors.count, "error" %>
+            prevented this post from saving
+        </h2>
+        <ul>
+          <%	 @post.errors.full_messages.each do |msg| %>
+            <li><%=	 msg %></li>
+          <%	 end %>
+        </ul>
+    <%	 end %>
+
+    <p>
+      <%=	 f.label :title %>
+      <%=	 f.text_field :title %>
+    </p>
+
+    <p>
+      <%=	 f.label :body %>
+      <%=	 f.text_area :body %>
+    </p>
+
+    <p>
+      <%=	 f.submit %>
+    </p>
+<%	 end %>

@@ -1,0 +1,33 @@
+<%	 provide(:title, @post.title) %>
+
+<a class="a-home-button" href="/">
+  <%=	 image_tag("lz.png",class: 'img-home-btn') %>
+</a>
+
+<div class="article-container">
+  <h1 class="h1-title" style="color: black;">
+    <%=	 @post.title %>
+  </h1>
+
+  <p class="date">
+    Submitted <%=	 time_ago_in_words(@post.created_at) %> Ago
+    | <%=	 link_to 'Edit', edit_post_path(@post) %>
+    | <%=	 link_to 'Delete', post_path(@post),method: :delete, data: {confirm: 'Are you sure?'}%>
+  </p>
+
+  <p class="">
+    <%=	 @post.body %>
+  </p>
+</div>
+
+<div class="footer-avatar-container">
+  <a href=<%=	 about_path %>>
+    <img class="avatar" src="https://github.com/tclem.png">
+  </a>
+  <div class="">
+    <p class="footer-intro">
+      Hi,I'm Zhou Liu.I'm a student, programmer, designer and hacker at BUPT in Beijing.
+    </p>
+  </div>
+</div>
+

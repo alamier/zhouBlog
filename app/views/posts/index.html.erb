@@ -1,0 +1,19 @@
+<div class="title-container">
+    <%=	 image_tag("title-image.png", class: "title-image") %>
+</div>
+
+<div class="avatar-container">
+  <a href=<%=	 about_path %>>
+    <img class="avatar" src="https://github.com/tclem.png" alt=""/>
+  </a>
+</div>
+
+<div class="posts-container">
+
+  <%	 @posts.each do |post| %>
+      <div class="">
+        <h2 class="h2-post-list"><%=	 link_to post.title, post %></h2>
+        <p class="date"><%=	 post.created_at.strftime("%B, %d, %Y") %></p>
+      </div>
+  <% end %>
+</div>

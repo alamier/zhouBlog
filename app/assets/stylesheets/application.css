@@ -1,0 +1,259 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.title-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.avatar-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.avatar {
+    z-index: 1;
+    margin-top: -33px;
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+}
+
+.title-image {
+    width: 100%;
+    height: auto;
+}
+
+.footer-container {
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #ddd;
+}
+
+.footer-item {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.article-title-container {
+    margin-top: -15%;
+    margin-bottom: 15%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1-title {
+    color:#fff;
+    font-width: bold;
+    font-size: 36px;
+    font-family: "Helvetica";
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.h1-form-title{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-width: bold;
+    font-family: "Helvetica";
+}
+
+.form-container {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: "Helvetica";
+}
+
+.intro {
+    color: #adadad;
+    font-style: italic;
+    font-size: 20px;
+    font-family: "Georgia";
+}
+
+.primary-btn {
+    color:#fff;
+    background-color: #286090;
+    border-color: #204d74;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    font-size: 14px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.flash-danger {
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#eed6d6 ;
+    color: #a05050;
+    border-radius: 4px;
+    line-height: 2;
+    font-size: 20px;
+    font-family: "Helvetica";
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+}
+
+.article-container {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+    font-size: 20px;
+    font-family: Georgia;
+    line-height: 1.6;
+}
+
+.posts-container {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    font-size: 20px;
+    font-family: Georgia;
+    line-height: 1.6;
+}
+
+.date {
+    margin-top: 0;
+    font-size: 85%;
+    color: #c7c7cc;
+    font-family: Georgia;
+    box-sizing: border-box;
+}
+
+.footer-intro {
+    color: #4a4a4a;
+    font-family: Georgia;
+    line-height: 1.6;
+}
+
+.footer-avatar-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 150px;
+    border-top: 1px solid #ccc;
+    width: 40%;
+}
+
+.h2-post-list {
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.h2-post-list a{
+    color: #428bca;
+    text-decoration: none;
+    font-family: Helvetica;
+    line-height: 1.1;
+}
+
+.h2-post-list a:hover {
+    text-decoration: underline;
+}
+
+.a-home-button {
+    position: fixed;
+    top: 20px;
+    margin-left: 5%;
+    z-index: 10;
+    text-align: center;
+    color: #0d95fc;
+    font-family: Helvetica;
+}
+
+.img-home-btn {
+    width: 50px;
+}
+
+.span-home-button:before{
+    content: '\f0d7';
+    box-sizing: border-box;
+}
+
+.date a{
+    text-decoration: inherit;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+@media (max-width: 1200px) {
+    .article-title-container{width: 85%;}
+    .article-title-container h1{font-size: 27px}
+    .article-title-container p {font-size: 19px}
+}
+
+@media (max-width: 996px) {
+    .article-title-container h1{font-size: 23px}
+    .article-title-container p {font-size: 13px}
+}
+
+@media (max-width: 768px) {
+    .article-container {width: 90%;}
+    .posts-container {width: 75%}
+    .footer-avatar-container {width: 70%}
+    .a-home-button {position: absolute;}
+    .article-title-container{width: 90%;margin-top: -25%}
+    .article-title-container h1{font-size: 23px}
+    .article-title-container p {font-size: 13px}
+}
+
+@media (max-width: 550px) {
+    .article-title-container{width: 100%;margin-top: 0%;text-align: center}
+    .article-title-container h1{font-size: 18px;margin-bottom: 0;margin-top: 0;color: black}
+    .article-title-container p {font-size: 10px}
+}
+
