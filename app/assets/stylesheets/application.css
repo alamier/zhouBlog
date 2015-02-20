@@ -14,20 +14,28 @@
  *= require_self
  */
 
+html {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
 body {
-    position: relative;
     width: 100%;
     margin: 0;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
+    padding: 0;
+    height: 100%;
     word-wrap: break-word;
     font-family: Helvetica;
-    height: auto;
-    min-height: 100%;
+}
+
+.wrapper-main {
+    min-height:100%;
+    position:relative;
 }
 
 .main-content-container{
-    margin-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 .home-word-container{
@@ -79,12 +87,13 @@ body {
     /*margin-top: 200px;*/
     position: absolute;
     bottom: 0;
+    left: 0;
     border-top: 1px solid #eee;
     padding-top: 10px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 20px;
     text-align: center;
     color: #adadad;
 }
@@ -332,4 +341,5 @@ label {
     .article-title-container p {font-size: 10px}
     .home-word-container{margin-top: 75px}
 }
+
 

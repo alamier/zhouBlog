@@ -33,17 +33,21 @@
     },false);
 </script>
 
-<div class="main-content-container">
-  <%= yield %>
+<div class="wrapper-main">
+  <div class="main-content-container">
+    <%= yield %>
+  </div>
+
+  <div class="footer-container">
+    <%	if zlogged_in? %>
+        <%=	 link_to "Logout",logout_path,method: :delete,class: "footer-item" %>
+        <a class="footer-item" href=<%=	 new_post_path %>>New</a>
+    <%	 else %>
+        <a class="footer-item" href=<%=	 login_path %>>Login</a>
+    <%	 end %>
+  </div>
 </div>
 
-<div class="footer-container">
-  <%	if zlogged_in? %>
-      <%=	 link_to "Logout",logout_path,method: :delete,class: "footer-item" %>
-    <a class="footer-item" href=<%=	 new_post_path %>>New</a>
-  <%	 else %>
-      <a class="footer-item" href=<%=	 login_path %>>Login</a>
-  <%	 end %>
-</div>
+
 </body>
 </html>
