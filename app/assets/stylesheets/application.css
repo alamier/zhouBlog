@@ -49,7 +49,7 @@ body {
 
 .footer-container {
     margin-top: 200px;
-    border-top: 1px solid #adadad;
+    border-top: 1px solid #eee;
     padding-top: 10px;
     width: 90%;
     margin-left: auto;
@@ -62,6 +62,10 @@ body {
 .footer-item {
     color: #adadad;
     text-decoration: none;
+}
+
+.footer-item:hover {
+    color: #2E2F30;
 }
 
 .article-title-container {
