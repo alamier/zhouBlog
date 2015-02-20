@@ -6,7 +6,6 @@ gem 'rails', '4.1.8'
 
 gem 'bcrypt', '3.1.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -39,4 +38,15 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development, :test do
+  gem 'sqlite3'
+
+end
+
+group :production do
+  gem 'pg',         '0.17.1'
+#Note also the addition of the rails_12factor gem, which is used by Heroku to serve static assets such as images and stylesheets.
+  gem 'rails_12factor',     '0.0.2'
+end
 
