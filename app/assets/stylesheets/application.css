@@ -26,7 +26,8 @@ body {
 }
 
 .avatar-container {
-    width: 60%;
+    width: 80%;
+    border-top: 1px solid #adadad;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -43,22 +44,23 @@ body {
 .title-image {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .footer-container {
     margin-top: 200px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #adadad;
     padding-top: 10px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
     text-align: center;
-    color: #ddd;
+    color: #adadad;
 }
 
 .footer-item {
-    color: #ddd;
+    color: #adadad;
     text-decoration: none;
 }
 
