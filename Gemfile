@@ -40,13 +40,11 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 group :development, :test do
-  gem 'sqlite3'
-
+  gem 'sqlite3', '1.3.9'
 end
 
 group :production do
-  gem 'pg',         '0.17.1'
-#Note also the addition of the rails_12factor gem, which is used by Heroku to serve static assets such as images and stylesheets.
-  gem 'rails_12factor',     '0.0.2'
+  gem 'pg',             '0.17.1'
+  #Note also the addition of the rails_12factor gem, which is used by Heroku to serve static assets such as images and stylesheets.
+  gem 'rails_12factor', '0.0.2'
 end
-
