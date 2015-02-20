@@ -11,9 +11,11 @@
 
   <p class="date">
     Submitted <%=	 time_ago_in_words(@post.created_at) %> Ago
+    <%	 if zlogged_in? %>
     | <%=	 link_to 'Edit', edit_post_path(@post) %>
     | <%=	 link_to 'Delete', post_path(@post),method: :delete, data: {confirm: 'Are you sure?'}%>
-  </p>
+    <%	 end %>
+        </p>
 
   <p class="">
     <%=	 @post.body %>
@@ -22,9 +24,9 @@
 
 <div class="footer-avatar-container">
   <a href=<%=	 about_path %>>
-    <img class="avatar" src="https://github.com/tclem.png">
+    <%=	 image_tag "avatar.png", class: "avatar" %>
   </a>
-  <div class="">
+  <div >
     <p class="footer-intro">
       Hi,I'm Zhou Liu.I'm a student, programmer, designer and hacker at BUPT in Beijing.
     </p>

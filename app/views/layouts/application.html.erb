@@ -4,7 +4,7 @@
   <title><%=	 zfull_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%=	 favicon_link_tag "lz.png" %>
+  <%=	 favicon_link_tag "lz_3.ico" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -12,10 +12,12 @@
 <%= yield %>
 
 <div class="footer-container">
-  <a class="footer-item" href="#">Login</a>
-  <a class="footer-item" href=<%=	 new_post_path %>>Logout</a>
-  <a class="footer-item" href=<%=	 new_post_path %>>New</a>
+  <%	if zlogged_in? %>
+      <%=	 link_to "Logout",logout_path,method: :delete,class: "footer-item" %>
+    <a class="footer-item" href=<%=	 new_post_path %>>New</a>
+  <%	 else %>
+      <a class="footer-item" href=<%=	 login_path %>>Login</a>
+  <%	 end %>
 </div>
-
 </body>
 </html>
