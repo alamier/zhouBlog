@@ -15,14 +15,35 @@
  */
 
 body {
+    position: static;
+    width: 100%;
     margin: 0;
     margin-bottom: 20px;
+    word-wrap: break-word;
+    font-family: Helvetica;
+}
+
+.home-word-container{
+    font-size: 55px;
+    color: #ffffff;
+    margin-top: 275px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.pre-article-body{
+    font-family: Georgia;
+    white-space: normal;
 }
 
 .title-container {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    width: auto;
+    height: auto;
 }
 
 .avatar-container {
@@ -192,13 +213,12 @@ label {
 }
 
 .footer-avatar-container {
-    width: 60%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     margin-top: 150px;
     border-top: 1px solid #ccc;
-    width: 40%;
 }
 
 .h2-post-list {
@@ -244,15 +264,45 @@ label {
     font-size: inherit;
 }
 
+.article-editor-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.article-title-editor{
+    width: 100%;
+    padding: 6px 12px;
+    line-height: 1.4;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.article-body-editor{
+    width: 100%;
+    height: 500px;
+    padding: 6px 12px;
+    line-height: 1.6;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+    font-size: 20px;
+}
+
+
 @media (max-width: 1200px) {
     .article-title-container{width: 85%;}
     .article-title-container h1{font-size: 27px}
     .article-title-container p {font-size: 19px}
+    .home-word-container{margin-top: 275px;font-size: 45px}
 }
 
 @media (max-width: 996px) {
     .article-title-container h1{font-size: 23px}
     .article-title-container p {font-size: 13px}
+    .home-word-container{margin-top: 210px;font-size: 36px}
 }
 
 @media (max-width: 768px) {
@@ -263,11 +313,13 @@ label {
     .article-title-container{width: 90%;margin-top: -25%}
     .article-title-container h1{font-size: 23px}
     .article-title-container p {font-size: 13px}
+    .home-word-container{margin-top: 125px;font-size: 25px}
 }
 
 @media (max-width: 550px) {
     .article-title-container{width: 100%;margin-top: 0%;text-align: center}
     .article-title-container h1{font-size: 18px;margin-bottom: 0;margin-top: 0;color: black}
     .article-title-container p {font-size: 10px}
+    .home-word-container{margin-top: 75px}
 }
 

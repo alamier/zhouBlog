@@ -13,32 +13,35 @@
   </a>
 </div>
 
-<h1>Edit Post</h1>
 
-<%=	 form_for @post do |f| %>
+<div class="article-editor-container">
+  <h1>Edit Post</h1>
 
-    <% if @post.errors.any? %>
-        <h2 class=""><%=	 pluralize @post.errors.count, "error" %>
-          prevented this post from updating
-        </h2>
-        <ul>
-          <%	 @post.errors.full_messages.each do |msg| %>
-              <li><%=	 msg %></li>
-          <%	 end %>
-        </ul>
-    <%	 end %>
+  <%=	 form_for @post do |f| %>
 
-    <p>
-      <%=	 f.label :title %>
-      <%=	 f.text_field :title %>
-    </p>
+      <% if @post.errors.any? %>
+          <h2 class=""><%=	 pluralize @post.errors.count, "error" %>
+            prevented this post from updating
+          </h2>
+          <ul>
+            <%	 @post.errors.full_messages.each do |msg| %>
+                <li><%=	 msg %></li>
+            <%	 end %>
+          </ul>
+      <%	 end %>
 
-    <p>
-      <%=	 f.label :body %>
-      <%=	 f.text_area :body %>
-    </p>
+      <p>
+        <%=	 f.label :title %>
+        <%=	 f.text_field :title, class:"article-title-editor" %>
+      </p>
 
-    <p>
-      <%=	 f.submit %>
-    </p>
-<%	 end %>
+      <p>
+        <%=	 f.label :body %>
+        <%=	 f.text_area :body, class:"article-body-editor" %>
+      </p>
+
+      <p>
+        <%=	 f.submit "update post", class:"primary-btn" %>
+      </p>
+  <%	 end %>
+</div>

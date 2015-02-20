@@ -17,9 +17,9 @@
     <%	 end %>
         </p>
 
-  <p class="">
-    <%=	 @post.body %>
-  </p>
+  <pre class="pre-article-body">
+    <%=	 markdown(@post.body) %>
+  </pre>
 </div>
 
 <div class="footer-avatar-container">
