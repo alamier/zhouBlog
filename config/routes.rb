@@ -2,7 +2,11 @@ Rails.application.routes.draw do
 
   get 'sessions/new'
 
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
+
+
   root "posts#index"
 
   get '/about' => 'static_pages#about'

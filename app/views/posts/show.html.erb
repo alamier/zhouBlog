@@ -33,3 +33,30 @@
   </div>
 </div>
 
+<div style="margin-left: auto;margin-right: auto;width: 65%;
+        border-bottom: 1px solid #eee;">
+  <h2><%=	 @post.comments.count %> Comments</h2>
+</div>
+<div class="comments-container">
+    <%=	 render @post.comments.order('created_at DESC') %>
+</div>
+
+<div style="margin-left: auto;margin-right: auto;width: 65%;">
+  <h2>Add a comment</h2>
+  <%=	 form_for([@post, @post.comments.build]) do |f| %>
+      <p>
+        <%=	 f.label :name %> <br>
+        <%=	 f.text_field :name, class:"comment-name-editor" %>
+      </p>
+
+      <p>
+        <%=	 f.label "comment" %> <br>
+        <%=	 f.text_area :body,class:"comment-body-editor" %>
+      </p>
+      <br/>
+      <%=	 f.submit class:"primary-btn" %>
+  <%	 end %>
+</div>
+
+
+
