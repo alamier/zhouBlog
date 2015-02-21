@@ -28,7 +28,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 # add markdown
-gem 'redcarpet'
+gem 'redcarpet', '~> 2.1.1'
+# add code syntax highlighting
+gem 'coderay', '~> 1.0.7'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
