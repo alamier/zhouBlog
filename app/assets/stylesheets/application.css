@@ -29,6 +29,14 @@ body {
     font-family: Helvetica;
 }
 
+blockquote {
+    background: gainsboro;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
 .wrapper-main {
     min-height:100%;
     position:relative;
@@ -311,6 +319,64 @@ label {
     font-family: Georgia;
 }
 
+.CodeRay {
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: gainsboro;
+    width: 100%;
+    font-family: "Menlo","Anonymous Pro", "Inconsolata",  "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
+}
+
+.CodeRay tbody{
+    display: block;
+    font-size: 13px;
+    width: 100%;
+}
+
+.CodeRay tbody tr {
+    display: block;
+    overflow: scroll;
+}
+
+.line-numbers {
+    background-color: #4C5550;
+    padding: 0 5px;
+    color: #74817a;
+    border-right: 1px solid #555;
+    text-align: center;
+}
+
+.line-numbers pre {
+}
+
+.line-numbers a{
+    font-family: "Menlo", "Anonymous Pro", "Inconsolata", "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
+    font-size: 15px;
+    text-decoration: none;
+    color: gray;
+}
+
+.code{
+    border: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.code pre {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    border-spacing: 0;
+    overflow: visible;
+}
+
+pre span{
+    display: inline-block;
+    line-height: 22px;
+    font-size: 15px;
+}
 
 @media (max-width: 1200px) {
     .article-title-container{width: 85%;}
