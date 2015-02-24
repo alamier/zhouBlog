@@ -438,6 +438,16 @@ pre span{
     font-size: 15px;
 }
 
+.about-profile-container{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    font-size: 20px;
+    font-family: Georgia;
+    line-height: 1.6;
+}
+
 @media (max-width: 1200px) {
     .article-title-container{width: 85%;}
     .article-title-container h1{font-size: 27px}
@@ -460,6 +470,7 @@ pre span{
     .article-title-container h1{font-size: 23px}
     .article-title-container p {font-size: 13px}
     .home-word-container{margin-top: 125px;font-size: 25px}
+    .about-profile-container{padding-top: 90px}
 }
 
 @media (max-width: 550px) {
@@ -467,6 +478,7 @@ pre span{
     .article-title-container h1{font-size: 18px;margin-bottom: 0;margin-top: 0;color: black}
     .article-title-container p {font-size: 10px}
     .home-word-container{margin-top: 75px}
+    .about-profile-container{padding-top: 10px}
 }
 
 
