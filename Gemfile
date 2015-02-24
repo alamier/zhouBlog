@@ -32,6 +32,7 @@ gem 'redcarpet', '~> 2.1.1'
 # add code syntax highlighting
 gem 'coderay', '~> 1.0.7'
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -52,4 +53,7 @@ group :production do
   gem 'pg',             '0.17.1'
   #Note also the addition of the rails_12factor gem, which is used by Heroku to serve static assets such as images and stylesheets.
   gem 'rails_12factor', '0.0.2'
+
+  gem 'puma'
+
 end
