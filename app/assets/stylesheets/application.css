@@ -433,11 +433,6 @@ label {
     overflow: visible;
 }
 
-a:link {
-    color: #3D76AE;
-}
-
-
 pre span{
     display: inline-block;
     line-height: 22px;
