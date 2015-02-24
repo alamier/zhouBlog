@@ -5,7 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.8'
 
 #zhou
-ruby '2.0.0'
 
 gem 'bcrypt', '3.1.7'
 # Use sqlite3 as the database for Active Record
