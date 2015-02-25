@@ -8,15 +8,10 @@ module ApplicationHelper
     end
   end
 
-  #markdown and cody syntax highlighting support
-  # def markdown(text)
-  #   markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML,
-  #                                      no_intra_emphasis:true,
-  #                                      fenced_code_blocks:true,
-  #                                      disable_indented_code_blocks:true)
-  #   return markdown.render(text).html_safe
-  # end
 
+  #markdown support and code highlighting support
+  #CodeRayify for code highlighting support
+  #Redcarpet for markdown
   class CodeRayify < Redcarpet::Render::HTML
     def block_code(code, language)
       CodeRay.scan(code, language).div(:line_numbers => :table)
@@ -37,6 +32,5 @@ module ApplicationHelper
     markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
     markdown_to_html.render(text).html_safe
   end
-
 
 end
