@@ -87,6 +87,7 @@ blockquote {
 .pre-article-body{
     font-family: Georgia;
     white-space: normal;
+    overflow: visible;
 }
 
 .title-container {
@@ -431,6 +432,15 @@ label {
     display: block;
     border-spacing: 0;
     overflow: visible;
+}
+
+code {
+    background: #f0f6fc;
+    border: 1px solid #d2dce6;
+    color: #444;
+    font-size: 0.875em;
+    line-height: 1.5714em;
+    padding: 0 2px;
 }
 
 a {
