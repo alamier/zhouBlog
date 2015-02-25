@@ -188,6 +188,7 @@ blockquote {
     background-color: #286090;
     border-color: #204d74;
     border: 1px solid transparent;
+    box-sizing: content-box;
     border-radius: 4px;
     cursor: pointer;
     padding: 6px 12px;
