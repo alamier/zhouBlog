@@ -25,7 +25,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    word-wrap: break-word;
     font-family: Helvetica;
 }
 
@@ -383,9 +382,8 @@ label {
 
 .CodeRay {
     display: block;
-    border: 1px solid #eee;
     border-radius: 5px;
-    background-color: gainsboro;
+    background-color: #fbfbfb;
     width: 100%;
     font-family: "Menlo","Anonymous Pro", "Inconsolata",  "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
 }
@@ -402,7 +400,7 @@ label {
 }
 
 .line-numbers {
-    background-color: #4C5550;
+    background-color: #E7E5DC;
     padding: 0 5px;
     color: #74817a;
     text-align: center;
@@ -423,6 +421,8 @@ label {
     padding: 0;
     padding-left: .5em;
     width: 100%;
+    height: 100%;
+    border-left: 3px solid #6CE26C;
 }
 
 .code pre {
