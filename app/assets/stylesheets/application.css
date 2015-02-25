@@ -400,7 +400,7 @@ label {
 }
 
 .line-numbers {
-    background-color: #E7E5DC;
+    background-color: #656565;
     padding: 0 5px;
     color: #74817a;
     text-align: center;
@@ -413,7 +413,7 @@ label {
     font-family: "Menlo", "Anonymous Pro", "Inconsolata", "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
     font-size: 15px;
     text-decoration: none;
-    color: gray;
+    color: #a8a8a8;
 }
 
 .code{
@@ -422,7 +422,7 @@ label {
     padding-left: .5em;
     width: 100%;
     height: 100%;
-    border-left: 3px solid #6CE26C;
+    /*border-left: 3px solid #6CE26C;*/
 }
 
 .code pre {
