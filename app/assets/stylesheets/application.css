@@ -434,7 +434,12 @@ label {
 }
 
 a {
-    color: #0d95fc;
+    color: #136ec2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 pre span{
